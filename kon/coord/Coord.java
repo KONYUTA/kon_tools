@@ -1,3 +1,4 @@
+// 座標管理用
 package kon.coord;
 
 import java.io.File;
