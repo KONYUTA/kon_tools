@@ -1,9 +1,11 @@
-// 事故現場の周辺に対象のポイントが存在するかを検証する。
-// コードを手直しする際は、複製したファイルを編集する、あるいは新しい継承クラスを作って編集するメソッドをオーバーライドすること。
-// 作成者: こん
-
+/**
+ * MainPoint
+ *
+ * csvファイルの各事故現場に対して、その周囲d[m]の範囲に対照地物が存在するかを計算するプログラム。
+ */
+package mains;
+//
 import kon.coord.*;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -12,7 +14,7 @@ import java.io.PrintWriter;
 import java.awt.Desktop;
 import java.net.URI;
 import java.io.InputStreamReader;
-
+//
 public class MainPoint{
     public static void main(String[] args){
 

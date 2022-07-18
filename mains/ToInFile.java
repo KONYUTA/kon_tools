@@ -1,12 +1,17 @@
+/**
+ * ToInFile
+ *
+ * 10進数の座標を60進数に変換する。
+ */
+package mains;
+//
 import kon.coord.*;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-
+//
 public class ToInFile{
-
     public static void main(String[] args){
         try{
 //            Coord shougaku = new Coord("data/shougakkou.txt");

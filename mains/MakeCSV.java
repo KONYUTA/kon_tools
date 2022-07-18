@@ -1,9 +1,16 @@
-//入力ファイルについて------------------
-//input_dir内のファイル名は数字.txt
-//ただし、数字が一桁の場合は0先頭に0を入れないと列番号が崩れる。テスト段階で気づいたけどソートアルゴリズムを作る気力がなかった。
-//例：08.txt
-//ファイルの中身はタブ区切りでn行2列
-
+/**
+ * MakeCSV
+ *
+ * 複数の列データを組み合わせてコンマ区切りテキストを作るプログラム。
+ * Excel等で読み込む際は新規ExcelファイルまたはCSVファイルを作成してデータタブから「テキストデータの読み込み」を行う。
+ * 入力ファイルの制約は以下の通り
+ * 1. input_dirディレクトリ内のファイル名は数字.txtとすること。
+ * 2. ファイル名の数字が一桁の場合は先頭に0を入れないと列番号が崩れる。テスト段階で気づいたけどソートアルゴリズムを作る気力がなかった。
+ *      例：08.txt
+ * 3. ファイルの中身はタブ区切りでn行1列
+ */
+package mains;
+//
 import kon.translate.*;
 import java.util.Arrays;
 import java.util.ArrayList;
@@ -13,7 +20,7 @@ import java.lang.StringBuilder;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
-
+//
 public class MakeCSV{
     public static void main(String[] args){
         String dir_name = "data/translate/result";

@@ -1,3 +1,4 @@
+package mains;
 import kon.coord.*;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -13,8 +14,8 @@ import java.io.FileReader;
 
 public class DebugPolygon extends MainPoint{
     public static void main(String[] args){
-        String coord_file = "kon/coord/data/csv/jinshin_zahyou.csv";
-        String result_file = "kon/coord/data/result/jinshixn_did.txt";
+        String coord_file = "data/coord/csv/jinshin_zahyou.csv";
+        String result_file = "data/coord/result/jinshixn_did.txt";
         pointInPolygon(coord_file, result_file);
     }
 

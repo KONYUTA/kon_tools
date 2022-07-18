@@ -1,4 +1,11 @@
-
+/**
+ * Translate
+ *
+ * 対応表をもとに入力ファイルを翻訳するプログラム。
+ * 事故データが大きすぎてメモリを非常に食いそうなので一旦列ごとに保存した。
+ * 列をつなげてコンマ区切りにするため、本プログラムを実行したのちにMakeCSVを実行する必要がある。
+ */
+package mains;
 
 import java.io.IOException;
 import java.io.File;
